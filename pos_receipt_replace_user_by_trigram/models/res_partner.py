@@ -7,4 +7,4 @@ from odoo import fields, models
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
-    pos_trigram = fields.Char()
+    pos_trigram = fields.Char(tracking=True)
